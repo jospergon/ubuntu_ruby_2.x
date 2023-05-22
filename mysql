@@ -1,0 +1,11 @@
+Package: *
+Pin: origin repo.mysql.com
+Pin-Priority: 900  
+
+Package: mysql*
+Pin: origin ch.archive.ubuntu.com
+Pin-Priority: -1
+
+Package: mysql*
+Pin: origin security.ubuntu.com
+Pin-Priority: -1
