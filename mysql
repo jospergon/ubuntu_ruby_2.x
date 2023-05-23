@@ -1,4 +1,4 @@
-Package: mysql*
+Package: *
 Pin: origin repo.mysql.com
 Pin-Priority: 900  
 
