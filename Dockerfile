@@ -30,8 +30,8 @@ RUN apt-get -y update
 RUN apt-get install -y mysql-client libmysqlclient-dev
 
 
-RUN wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
-RUN dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
+RUN wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.focal_amd64.deb
+RUN dpkg -i wkhtmltox_0.12.5-1.focal_amd64.deb
 
 RUN git clone https://github.com/rbenv/ruby-build.git && \
   PREFIX=/usr/local ./ruby-build/install.sh && \
