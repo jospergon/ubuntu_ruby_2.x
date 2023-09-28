@@ -13,7 +13,7 @@ RUN echo $TZ > /etc/timezone && \
 RUN apt-get -y update
 
 RUN apt-get install -y build-essential sudo
-RUN apt-get install -y git wget curl rsync bc apt-transport-https libxml2 libxml2-dev libcurl4-openssl-dev
+RUN apt-get install -y git wget curl rsync bc apt-transport-https patch ruby-dev liblzma-dev zlib1g-dev libcurl4-openssl-dev
 RUN apt-get install -y gawk libreadline6-dev libyaml-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 RUN apt-get install -y libmagickwand-dev imagemagick inkscape
 RUN apt-get install -y nodejs vim qt5-default libqt5webkit5-dev xvfb dbus-x11 gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x xfonts-base xfonts-75dpi
@@ -35,4 +35,4 @@ RUN dpkg -i wkhtmltox_0.12.5-1.focal_amd64.deb
 
 RUN git clone https://github.com/rbenv/ruby-build.git && \
   PREFIX=/usr/local ./ruby-build/install.sh && \
-  ruby-build -v 2.1.10 /usr/local
+  ruby-build -v 2.7.8 /usr/local
