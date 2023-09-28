@@ -35,4 +35,4 @@ RUN dpkg -i wkhtmltox_0.12.5-1.focal_amd64.deb
 
 RUN git clone https://github.com/rbenv/ruby-build.git && \
   PREFIX=/usr/local ./ruby-build/install.sh && \
-  ruby-build -v 2.7.8 /usr/local
+  ruby-build -v 2.7.6 /usr/local
