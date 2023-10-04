@@ -9,3 +9,7 @@ Pin-Priority: -1
 Package: mysql*
 Pin: origin security.ubuntu.com
 Pin-Priority: -1
+
+Package: mysql*
+Pin: origin eu-west-1.ec2.archive.ubuntu.com
+Pin-Priority: -1
