@@ -22,7 +22,7 @@ RUN apt-get install -y unzip netcat libgconf-2-4 poppler-utils locales
 
 
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys B7B3B788A8D3785C
-RUN echo 'deb http://repo.mysql.com/apt/ubuntu/ bionic mysql-5.7' > /etc/apt/sources.list.d/mysql.list
+RUN echo 'deb http://repo.mysql.com/apt/ubuntu/ jammy mysql-5.7' > /etc/apt/sources.list.d/mysql.list
 ADD mysql /etc/apt/preferences.d/mysql
 
 RUN apt-get remove -y mysql-client mysql-common mysql-server libmysqlclient-dev
