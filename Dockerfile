@@ -16,11 +16,12 @@ RUN apt-get install -y build-essential sudo
 RUN apt-get install -y git wget curl rsync bc apt-transport-https patch ruby-dev liblzma-dev zlib1g-dev libcurl4-openssl-dev
 RUN apt-get install -y gawk libreadline6-dev libyaml-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 RUN apt-get install -y libmagickwand-dev imagemagick inkscape
-RUN apt-get install -y nodejs vim qt5-default libqt5webkit5-dev xvfb dbus-x11 gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x xfonts-base xfonts-75dpi
+RUN apt-get install -y nodejs vim qtbase5-dev libqt5webkit5-dev xvfb dbus-x11 gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x 
+RUN apt-get install -y libfontenc1 xfonts-encodings xfonts-utils xfonts-base xfonts-75dpi
 RUN apt-get install -y unzip netcat libgconf-2-4 poppler-utils
 
 
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3A79BD29
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys B7B3B788A8D3785C
 RUN echo 'deb http://repo.mysql.com/apt/ubuntu/ bionic mysql-5.7' > /etc/apt/sources.list.d/mysql.list
 ADD mysql /etc/apt/preferences.d/mysql
 
